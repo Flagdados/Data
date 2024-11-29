@@ -1,60 +1,529 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualização de Dashboards Power BI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .dashboard {
-            width: 100%;
-            max-width: 600px;
-            height: 500px;
-            border: 2px solid #ddd;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        h1 {
-            text-align: center;
-            padding: 20px;
-            color: #333;
-        }
-    </style>
+<!-- saved from url=(0032)https://946074.mobirisesite.com/ -->
+<html class="desktop mbr-site-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Site made with Mobirise Online Website Builder v5.9.13, https://a.mobirise.com -->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.13, a.mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://a.mobirise.com/app/builder/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="Portifolio sobre Analise de dados">
+  <title>Home</title>
+  <link rel="stylesheet" href="./Home_files/mobirise2.css">
+  <link rel="stylesheet" href="./Home_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./Home_files/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./Home_files/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="./Home_files/animate.css">
+  <link rel="stylesheet" href="./Home_files/styles.css">
+  <link rel="stylesheet" href="./Home_files/style.css">
+  <link rel="stylesheet" href="./Home_files/style(1).css">
+  <link rel="stylesheet" href="./Home_files/css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="stylesheet" href="./Home_files/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobiriseBanner.container-banner {
+  height: 11rem;
+  opacity: 1;
+  -webkit-animation: 4s linear animationHeight;
+  -moz-animation: 4s linear animationHeight;
+    -o-animation: 4s linear animationHeight;
+       animation: 4s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobiriseBanner.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobiriseBanner .banner {
+  min-height: 11rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 4s linear animationBanner;
+  -moz-animation: 4s linear animationBanner;
+    -o-animation: 4s linear animationBanner;
+       animation: 4s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobiriseBanner .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobiriseBanner .buy-license {
+  text-decoration: underline;
+}
+#mobiriseBanner .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 75% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 75% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 75% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 75% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 11rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 11rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 11rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 11rem; } }
+
+@-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 767px) {
+  #mobiriseBanner.container-banner {
+    height: 12rem;
+  }
+  #mobiriseBanner .banner {
+    min-height: 12rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
 </head>
 <body>
-
-    <h1>Dashboards Power BI</h1>
-    <div class="container">
-        <!-- Insira os iframes dos seus dashboards aqui -->
-        
-        <!-- Dashboard 1 -->
-        <div class="dashboard">
-           <iframe title="statuskp - Copia" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTY5YzRmNjYtNzViMC00ZDYzLWFmNjQtZjFhN2VlYjBkMTFiIiwidCI6ImExYzFhYzZkLWVlYmQtNDBlOC05MTU1LThhMmIxNjIwYTEyMyJ9&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>
-
-        <!-- Dashboard 2 -->
-        <div class="dashboard">
-            <iframe width="100%" height="100%" src="URL_DO_DASHBOARD_2" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
-
-        <!-- Dashboard 3 -->
-        <div class="dashboard">
-            <iframe width="100%" height="100%" src="URL_DO_DASHBOARD_3" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
-
-        <!-- Adicione mais dashboards conforme necessário -->
+<div class="container-banner" id="mobiriseBanner">
+  <div class="banner align-center">
+    <button type="button" onclick="document.getElementById(&#39;mobiriseBanner&#39;).classList.add(&#39;container-banner-closing&#39;)" class="btn-close animate__animated animate__delay-1s animate__fadeIn" aria-label="Close" style="position: fixed;top: 16px;right: 16px;"></button>
+    <p class="mbr-text mbr-fonts-style display-7 hidden animate__animated animate__delay-1s">
+      <b>BLACK FRIDAY!</b> <br>
+      Get 99% OFF <a class="mbr-text" href="https://mobirise.com/p/?utm_source=bf24_mbrsite_banner&amp;utm_medium=banner&amp;utm_campaign=bf24_mbrsite_banner" target="_blank">AI Website Builder Kit</a>!
+      <br> Premium AI features, 11000+ templates &amp; apps!
+    </p>
+    <div class="mbr-section-btn">
+      <a class="btn btn-sm btn-primary display-4 animate__animated animate__delay-1s animate__fadeIn" href="https://mobirise.com/p/?utm_source=bf24_mbrsite_banner&amp;utm_medium=banner&amp;utm_campaign=bf24_mbrsite_banner" target="_blank">SAVE 99% NOW</a>
     </div>
+  </div>
+</div>
+  
+  <section data-bs-version="5.1" class="header5 cid-tJS6uM4N87" id="header05-1">
+	
 
-</body>
-</html>
+	
+	
+	<div class="topbg"></div>
+	<div class="align-center container">
+		<div class="row justify-content-center">
+			<div class="col-md-12 col-lg-9">
+				<h1 class="mbr-section-title mbr-fonts-style mb-4 display-1 animate__animated animate__delay-1s animate__fadeIn"><strong>Seja Bem-vindo</strong></h1>
+				<p class="mbr-text mbr-fonts-style mb-4 display-7 animate__animated animate__delay-1s animate__fadeIn">Conheça o meu portfólio de projetos de Business Intelligence</p>
+				
+			</div>
+		</div>
+		<div class="row mt-5 justify-content-center">
+			<div class="col-12 col-lg-12">
+				<img src="./Home_files/11-h_m3zzs13c.jpg" alt="bandeira" title="" class="animate__animated animate__delay-1s animate__fadeIn">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="features4 cid-tMlEXTHLbS" id="features04-w">
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mbr-section-head mb-5">
+					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2 hidden animate__animated animate__delay-1s"><strong>Cases</strong></h4>
+					<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7 hidden animate__animated animate__delay-1s">Abaixo segue exemplos de dashboards sobre área de Logistica, Financeiro, Vendas.&nbsp;</h5>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-image col-12 col-md-6 col-lg-4 hidden animate__animated animate__delay-1s">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="./Home_files/gallery03-h_m400h25h.jpg" alt="Logistica">
+					</div>
+					<div class="item-content">
+						<h5 class="item-title mbr-fonts-style display-5">
+							<strong>Logistica</strong></h5>
+						
+						<p class="mbr-text mbr-fonts-style display-7">
+							Podemos ter uma visão sobre a performance&nbsp; logística, principais KPI&nbsp; para medição no prazo ou fora do prazo.<strong> by PowerBI</strong></p>
+						<div class="mbr-section-btn item-footer"><a href="https://app.powerbi.com/view?r=eyJrIjoiYzU1YzE5YjAtMTE4ZC00NTljLWIyYjItN2Y4ODg1OTM5MGMxIiwidCI6ImExYzFhYzZkLWVlYmQtNDBlOC05MTU1LThhMmIxNjIwYTEyMyJ9" class="btn item-btn btn-primary display-7" target="_blank">Clique aqui</a></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="item features-image col-12 col-md-6 col-lg-4 hidden animate__animated animate__delay-1s">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="./Home_files/gallery05-h_m400h9pa.jpg" alt="Financeiro">
+					</div>
+					<div class="item-content">
+						<h5 class="item-title mbr-fonts-style display-5">
+							<strong>Financeiro</strong></h5>
+						
+						<p class="mbr-text mbr-fonts-style display-7">
+							Temos a&nbsp; movimentação do PIX no Brasil no geral, por município e detalhes sobre a movimentação de cédulas e moedas no Brasil, extraído da API do Banco Central pelo Python. <strong>by PowerBI</strong></p>
+						<div class="mbr-section-btn item-footer"><a href="https://app.powerbi.com/view?r=eyJrIjoiZTU0NGViNTItYjNlMC00MjFiLWI3NmQtZTMyY2YzZWM0NzQxIiwidCI6ImExYzFhYzZkLWVlYmQtNDBlOC05MTU1LThhMmIxNjIwYTEyMyJ9" class="btn item-btn btn-primary display-7" target="_blank">Clique aqui</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="item features-image col-12 col-md-6 col-lg-4 hidden animate__animated animate__delay-1s">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="./Home_files/gallery02-h_m400hhwa.jpg" alt="Vendas">
+					</div>
+					<div class="item-content">
+						<h5 class="item-title mbr-fonts-style display-5">
+							<strong>Vendas</strong></h5>
+						
+						<p class="mbr-text mbr-fonts-style display-7">Performance de vendas em uma loja de automóveis, por vendedor, por fabricante, para Gerência poder obter seus insights de melhoria de vendas.<strong> by Google Looker Studio</strong></p>
+						<div class="mbr-section-btn item-footer"><a href="https://lookerstudio.google.com/reporting/f07b5a78-e6de-4b5d-aa32-a68563675670" class="btn item-btn btn-primary display-7" target="_blank">Clique aqui</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="features15 cid-tLek7gQhG7" id="features015-m">
+	
+
+	
+	
+	<div class="container">
+		<div class="mbr-section-head mb-5">
+			<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2 hidden animate__animated animate__delay-1s"><strong>Ciclo de Analise de dados&nbsp;</strong></h4>
+			
+		  </div>
+		<div class="row justify-content-center">
+			<div class="item features-without-image col-12 col-lg-3 hidden animate__animated animate__delay-1s">
+				<div class="item-wrapper">
+					<div class="img-wrapper">
+						<img src="./Home_files/shop1-h_m401bwp6.jpg" alt="" data-slide-to="0">
+					</div>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-3 display-5">
+							<strong>Coleta de Dados</strong></h4>
+						<h5 class="card-text mbr-fonts-style display-7">A coleta de dados é semelhante a embarcar em uma expedição. As startups devem coletar dados relevantes de diversas fontes para alimentar seus motores analíticos. Aqui estão algumas considerações importantes</h5>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-lg-3 hidden animate__animated animate__delay-1s">
+				<div class="item-wrapper">
+					<div class="img-wrapper">
+						<img src="./Home_files/shop1-h_m4026cp9.jpg" alt="" data-slide-to="1">
+					</div>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-3 display-5"><strong>Processamento de dados</strong></h4>
+						<h5 class="card-text mbr-fonts-style display-7">O processamento de dados envolve a transformação dos dados brutos coletados em um formato estruturado e padronizado que pode ser facilmente armazenado, acessado e analisado.&nbsp;</h5>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-lg-3 hidden animate__animated animate__delay-1s">
+				<div class="item-wrapper">
+					<div class="img-wrapper">
+						<img src="./Home_files/shop1-h_m4026hfc.jpg" alt="" data-slide-to="2">
+					</div>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-3 display-5"><strong>Análise de dados</strong></h4>
+						<h5 class="card-text mbr-fonts-style display-7">&nbsp;A análise de dados envolve a aplicação de vários métodos e técnicas estatísticas e analíticas aos dados processados, a fim de extrair insights significativos e acionáveis ​​que podem ajudá-lo a tomar melhores decisões de preços.&nbsp;</h5>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-lg-3 hidden animate__animated animate__delay-1s">
+				<div class="item-wrapper">
+					<div class="img-wrapper">
+						<img src="./Home_files/shop1-h_m4026m07.jpg" alt="" data-slide-to="3">
+					</div>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-3 display-5"><strong>&nbsp;Visualização de dados</strong></h4>
+						<h5 class="card-text mbr-fonts-style display-7">&nbsp;A visualização de dados envolve a apresentação dos resultados e insights da análise de dados de forma clara, concisa e atraente, usando vários elementos visuais, como cores, formas, tamanhos, ícones, etc. Seu público-alvo, como clientes, partes interessadas, gerentes, etc</h5>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="gallery1 mbr-gallery cid-tMlDYtQ5fF" id="gallery02-v">
+    
+
+    
+    
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-2"><strong>Existe uma analise para cada um.</strong></h3>
+                    <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row mbr-gallery mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 702.406px;">
+            
+            
+            
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" style="position: absolute; left: 0px; top: 0px;">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uvxBpjAoNx-modal" data-bs-target="#uvxBpjAoNx-modal">
+                    <img class="w-100" src="./Home_files/gallery10-h_m3zzioyj.jpg" alt="Mobirise Website Builder" data-slide-to="0" data-bs-slide-to="1" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div><div class="col-12 col-md-6 col-lg-3 item gallery-image" style="position: absolute; left: 467.75px; top: 0px;">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uvxBpjAoNx-modal" data-bs-target="#uvxBpjAoNx-modal">
+                    <img class="w-100" src="./Home_files/g5ab22ba7c079774c8b84a0d99d08-h_m3zzib10.png" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="0" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div><div class="col-12 col-md-6 col-lg-3 item gallery-image" style="position: absolute; left: 935.5px; top: 0px;">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uvxBpjAoNx-modal" data-bs-target="#uvxBpjAoNx-modal">
+                    <img class="w-100" src="./Home_files/gallery06-h_m3zzgjnp.jpg" alt="Mobirise Website Builder" data-slide-to="2" data-bs-slide-to="3" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div><div class="col-12 col-md-6 col-lg-3 item gallery-image" style="position: absolute; left: 1403.25px; top: 0px;">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uvxBpjAoNx-modal" data-bs-target="#uvxBpjAoNx-modal">
+                    <img class="w-100" src="./Home_files/gallery08-h_m3zzg5z9.jpg" alt="Mobirise Website Builder" data-slide-to="3" data-bs-slide-to="2" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" style="position: absolute; left: 935.5px; top: 260.031px;">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uvxBpjAoNx-modal" data-bs-target="#uvxBpjAoNx-modal">
+                    <img class="w-100" src="./Home_files/gallery02-h_m3zzijlb.jpg" alt="Mobirise Website Builder" data-slide-to="4" data-bs-slide-to="3" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" style="position: absolute; left: 1403.25px; top: 338.188px;">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uvxBpjAoNx-modal" data-bs-target="#uvxBpjAoNx-modal">
+                    <img class="w-100" src="./Home_files/gallery01-h_m3zzgbfq.jpg" alt="Mobirise Website Builder" data-slide-to="5" data-bs-slide-to="3" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div><div class="col-12 col-md-6 col-lg-3 item gallery-image" style="position: absolute; left: 467.75px; top: 343.828px;">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uvxBpjAoNx-modal" data-bs-target="#uvxBpjAoNx-modal">
+                    <img class="w-100" src="./Home_files/g78b294f51a18c92aaec0ff033265-h_m3zzhg5q.png" alt="Mobirise Website Builder" data-slide-to="6" data-bs-slide-to="0" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="uvxBpjAoNx-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="carousel slide" id="lb-uvxBpjAoNx" data-interval="5000" data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                
+                                
+                                
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./Home_files/gallery10-h_m3zzioyj.jpg" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="./Home_files/g5ab22ba7c079774c8b84a0d99d08-h_m3zzib10.png" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="./Home_files/gallery06-h_m3zzgjnp.jpg" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="./Home_files/gallery08-h_m3zzg5z9.jpg" alt="Mobirise Website Builder">
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./Home_files/gallery02-h_m3zzijlb.jpg" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./Home_files/gallery01-h_m3zzgbfq.jpg" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="./Home_files/g78b294f51a18c92aaec0ff033265-h_m3zzhg5q.png" alt="Mobirise Website Builder">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx"></li><li data-slide-to="1" data-bs-slide-to="0" class="active" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx"></li>
+                                <li data-slide-to="2" data-bs-slide-to="1" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx"></li>
+                                <li data-slide-to="3" data-bs-slide-to="2" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx"></li>
+                                <li data-slide-to="4" data-bs-slide-to="3" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx"></li>
+                                <li data-slide-to="5" data-bs-slide-to="4" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx"></li>
+                                <li data-slide-to="6" data-bs-slide-to="5" data-target="#lb-uvxBpjAoNx" data-bs-target="#lb-uvxBpjAoNx"></li>
+                                
+                            </ol>
+                            <a role="button" href="https://946074.mobirisesite.com/" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                            </a>
+                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" data-bs-slide="prev" href="https://946074.mobirisesite.com/#lb-uvxBpjAoNx">
+                                <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" data-bs-slide="next" href="https://946074.mobirisesite.com/#lb-uvxBpjAoNx">
+                                <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="header1 cid-tJS9vXDdRK" id="header01-7">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-7 image-wrapper">
+				<img class="w-100 hidden animate__animated animate__delay-1s" src="./Home_files/gb50d931d9c66c2b3882cf0788560-h_m400trwk.png" alt="Mobirise Website Builder">
+			</div>
+			<div class="col-12 col-lg col-md-12">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2 hidden animate__animated animate__delay-1s"><strong>About&nbsp;</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7 hidden animate__animated animate__delay-1s">
+						Formado em Administração de Empresas e com especialização em Logística e cadeia de suprimentos (MBA), sou um analista de dados com mais de 4 anos de experiência no setor de logística. Atualmente, ocupo o cargo de Analista e estou constantemente em busca de oportunidades para meu crescimento e desenvolvimento profissional dentro da empresa.<br><br>Minha trajetória, tive o privilégio de trabalhar em colaboração com gestores e clientes/fornecedores, área rodoviária, marítima proporcionando soluções eficientes e promovendo a excelência no planejamento e direcionamento das tomadas de decisões. Com minha habilidade de análise e interpretação de dados, contribuí para aprimorar a tomada de decisão com a melhoria contínua dos processos, automação dos processos com RPA.&nbsp;</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-tJS9pBcTSa" id="form02-6">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head mb-5">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2 hidden animate__animated animate__delay-1s">
+                <strong>Contact Form</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7 hidden animate__animated animate__delay-1s">Preencha os campos abaixo e me envie uma mensagem</h4>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="RRPg+Df70/0DK/J+Nq25gxYId+0NB9NtNjRl6eYasLIsH+oBoovt7uOmshjt70/hLZkrOWU0TIHASlkO7HGRYW0q+ZHujAqKxemGhYIlodPWxgbe9vaGkIFuj6GA7nzG">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form02-6">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-form02-6">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="phone">
+                            <input type="tel" name="phone" placeholder="Phone" data-form-field="phone" class="form-control" value="" id="phone-form02-6">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form02-6"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer1 programm5 cid-tJS9NNcTLZ" once="footers" id="footer03-8">
+
+        
+
+    
+
+    <div class="container">
+        <div class="row">
+
+            <div class="row-links mb-4">
+                <ul class="header-menu">
+                  
+                  
+                  
+                  
+                <li class="header-menu-item mbr-fonts-style display-5 hidden animate__animated animate__delay-1s"><a href="https://946074.mobirisesite.com/index.html#header01-7" class="text-danger hidden animate__animated animate__delay-1s">About</a></li><li class="header-menu-item mbr-fonts-style display-5 hidden animate__animated animate__delay-1s"></li><li class="header-menu-item mbr-fonts-style display-5 hidden animate__animated animate__delay-1s"><a href="https://946074.mobirisesite.com/index.html#contacts02-9" class="text-danger hidden animate__animated animate__delay-1s">Contacts</a></li><li class="header-menu-item mbr-fonts-style display-5 hidden animate__animated animate__delay-1s"><a href="https://946074.mobirisesite.com/index.html#gallery02-v" class="text-danger text-primary hidden animate__animated animate__delay-1s">Works</a></li></ul>
+              </div>
+
+            <div class="col-12">
+                
+            </div>
+            <div class="col-12 mt-5">
+                <p class="mbr-fonts-style copyright display-7 hidden animate__animated animate__delay-1s">
+                    © Copyright 2025 Bandeira - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script type="text/javascript" id="www-widgetapi-script" src="./Home_files/www-widgetapi.js.download" async=""></script><script src="./Home_files/iframe_api"></script><script src="./Home_files/jquery.min.js.download"></script>
+  <script src="./Home_files/bootstrap.bundle.min.js.download"></script>
+  <script src="./Home_files/smooth-scroll.js.download"></script>
+  <script src="./Home_files/index.js.download"></script>
+  <script src="./Home_files/masonry.pkgd.min.js.download"></script>
+  <script src="./Home_files/imagesloaded.pkgd.min.js.download"></script>
+  <script src="./Home_files/script.js.download"></script>
+  <script src="./Home_files/player.min.js.download"></script>
+  <script src="./Home_files/script(1).js.download"></script>
+  <script src="./Home_files/formoid.min.js.download"></script>
+  
+  
+  
+  
+  
+</body></html>
